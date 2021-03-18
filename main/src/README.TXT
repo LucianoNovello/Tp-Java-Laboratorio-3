@@ -1,1 +1,1 @@
-Clases y grafica
+Class and graphic
