@@ -1,4 +1,4 @@
-package grafica;
+package graphic;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -8,11 +8,11 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import app.Administrador;
-import clases.Aerolinea;
-import clases.Aeropuerto;
-import clases.Comercial;
-import clases.VueloInternacional;
-import recursos.manejoDeArchivos;
+import obclass.Aerolinea;
+import obclass.Aeropuerto;
+import obclass.Comercial;
+import obclass.VueloInternacional;
+import resources.manejoDeArchivos;
 
 import javax.swing.JLabel;
 import java.awt.Font;

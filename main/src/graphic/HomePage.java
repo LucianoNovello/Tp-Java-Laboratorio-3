@@ -1,4 +1,4 @@
-package grafica;
+package graphic;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

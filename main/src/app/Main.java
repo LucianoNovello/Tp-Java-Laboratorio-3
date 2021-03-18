@@ -2,10 +2,10 @@ package app;
 
 import java.awt.EventQueue;
 
-import grafica.LogginScreen;
-import grafica.MsgError;
-import grafica.RegistroAdmin;
-import grafica.RegistroUsuario;
+import graphic.LogginScreen;
+import graphic.MsgError;
+import graphic.RegistroAdmin;
+import graphic.RegistroUsuario;
 import java.io.*;
 public class Main 
 {

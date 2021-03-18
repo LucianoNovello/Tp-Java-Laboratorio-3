@@ -1,11 +1,12 @@
-package clases;
+package obclass;
 
 import java.io.Serializable;
 
 import interfaces.IComercial;
 
-public class VueloInternacional extends Comercial implements IComercial,Serializable
+public class VueloDeCabotaje extends Comercial implements IComercial,Serializable
 {
+	
 
 	/**
 	 * 
@@ -13,22 +14,24 @@ public class VueloInternacional extends Comercial implements IComercial,Serializ
 	private static final long serialVersionUID = 2L;
 
 	//CONSTRUCTOR COMPLETO
-	public VueloInternacional(String marca, String modelo, String origen, String destino, int cantidadAsientosDisponibles,
+	public VueloDeCabotaje(String marca, String modelo, String origen, String destino, int cantidadAsientosDisponibles,
 			double precio, double kilometrosARecorrer, double duracionVuelo) 
 	{
 		super(marca, modelo, origen, destino, cantidadAsientosDisponibles, precio, kilometrosARecorrer, duracionVuelo);
 	}
-
 	
 	//CONSTRUCTOR VACIO
-	public VueloInternacional() 
-	{
+	public VueloDeCabotaje() {
 		super();
 	}
 
 	//METODOS
+	
+	/*/
+	 * metodosInterface
+	 */
 	@Override
-	public void calcularPrecio() 
+	public void calcularPrecio()
 	{
 		double descuento = getPrecio() - calcularDescuento(); 
 		setPrecio(descuento);
@@ -41,27 +44,20 @@ public class VueloInternacional extends Comercial implements IComercial,Serializ
 		
 		if(getKilometrosARecorrer()<= 2000)
 		{
-			return descuento;
-		}
-		else if((getKilometrosARecorrer() >= 2000) && (getKilometrosARecorrer() <= 5000))
-		{
 			descuento = (getPrecio() * 5)/100;
 		}
-		else if((getKilometrosARecorrer() >= 5000) && (getKilometrosARecorrer() <= 10000))
+		else if(getKilometrosARecorrer() >= 2000)
 		{
 			descuento = (getPrecio() * 10)/100;
 		}
-		else
-		{
-			descuento = (getPrecio() * 15)/100;
-		}
 		return descuento;
 	}
-	
+
 	@Override
-	public String toString()
+	public String toString() 
 	{
 		return super.toString();
 	}
+
 	
 }

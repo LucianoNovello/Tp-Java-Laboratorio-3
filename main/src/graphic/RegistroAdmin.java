@@ -1,4 +1,4 @@
-package grafica;
+package graphic;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,10 +6,10 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import recursos.manejoDeArchivos;
+import resources.manejoDeArchivos;
 
 import app.Administrador;
-import clases.Aeropuerto;
+import obclass.Aeropuerto;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.SwingConstants;
@@ -32,7 +32,7 @@ public class RegistroAdmin extends JFrame {
 	public RegistroAdmin() {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setIconImage(new ImageIcon(getClass().getResource("/recursos/Avion.png")).getImage());
+		this.setIconImage(new ImageIcon(getClass().getResource("/resources/Avion.png")).getImage());
 
 		setBounds(100, 100, 450, 200);
 		contentPane = new JPanel();

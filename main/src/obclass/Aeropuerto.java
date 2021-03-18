@@ -1,4 +1,4 @@
-package clases;
+package obclass;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import app.Administrador;
 import app.Cliente;
 import app.ListadoAdmin;
 import app.ListadoCliente;
-import recursos.manejoDeArchivos;
+import resources.manejoDeArchivos;
 
 public class Aeropuerto implements Serializable
 {

@@ -1,12 +1,12 @@
-package recursos;
+package resources;
 
 import java.io.*;
 
 import app.Administrador;
 import app.Cliente;
-import clases.Aerolinea;
-import clases.Avion;
-import clases.BoletoDeAvion;
+import obclass.Aerolinea;
+import obclass.Avion;
+import obclass.BoletoDeAvion;
 
 /*
  * claseConFuncionesEnParteCedidasPorElProfe

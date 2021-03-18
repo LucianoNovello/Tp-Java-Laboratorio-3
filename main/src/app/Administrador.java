@@ -12,10 +12,8 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import clases.Aerolinea;
-import clases.Aeropuerto;
-import clases.Avion;
-import clases.ListadoAerolinea;
+import obclass.Aerolinea;
+import obclass.ListadoAerolinea;
 
 
 public class Administrador implements Serializable
@@ -159,6 +157,7 @@ public class Administrador implements Serializable
 	 */
 	public ArrayList<String> obtenerNombresAerolineas(int idAdmin)
 	{
+		
 		ArrayList<String> aux = new ArrayList<String>();
 		
 		Set<Entry<Integer, ListadoAerolinea>> conjunto = HMAdminAerolinea.entrySet();

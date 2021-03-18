@@ -1,4 +1,4 @@
-package grafica;
+package graphic;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -9,12 +9,12 @@ import javax.swing.border.EmptyBorder;
 
 import app.Administrador;
 import app.ListadoAdmin;
-import clases.Aerolinea;
-import clases.Aeropuerto;
-import clases.Carga;
-import clases.VueloDeCabotaje;
-import clases.VueloInternacional;
-import recursos.manejoDeArchivos;
+import obclass.Aerolinea;
+import obclass.Aeropuerto;
+import obclass.Carga;
+import obclass.VueloDeCabotaje;
+import obclass.VueloInternacional;
+import resources.manejoDeArchivos;
 
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -37,6 +37,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.EOFException;
 import java.io.IOException;
+
 
 public class LogginScreen extends JFrame {
 
@@ -63,7 +64,7 @@ public class LogginScreen extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setForeground(Color.WHITE);
 		setBounds(100, 100, 450, 200);
-		this.setIconImage(new ImageIcon(getClass().getResource("/recursos/Avion.png")).getImage());
+		this.setIconImage(new ImageIcon(getClass().getResource("/resources/Avion.png")).getImage());
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.BLACK);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

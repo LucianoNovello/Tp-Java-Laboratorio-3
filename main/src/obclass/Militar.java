@@ -1,4 +1,4 @@
-package clases;
+package obclass;
 
 import java.io.Serializable;
 

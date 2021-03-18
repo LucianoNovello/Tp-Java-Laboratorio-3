@@ -1,4 +1,4 @@
-package recursos;
+package resources;
 
 import java.nio.file.Files;
 import org.json.*;

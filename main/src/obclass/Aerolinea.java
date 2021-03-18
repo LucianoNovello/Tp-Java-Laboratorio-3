@@ -1,4 +1,4 @@
-package clases;
+package obclass;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 import app.Administrador;
-import recursos.manejoDeArchivos;
+import resources.manejoDeArchivos;
 
 public class Aerolinea implements Serializable
 {

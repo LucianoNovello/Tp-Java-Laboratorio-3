@@ -1,4 +1,4 @@
-package grafica;
+package graphic;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -10,8 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.border.EmptyBorder;
 import app.Cliente;
-import clases.Aeropuerto;
-import recursos.manejoDeArchivos;
+import obclass.Aeropuerto;
+import resources.manejoDeArchivos;
 
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -52,7 +52,7 @@ public class RegistroUsuario extends JFrame {
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 200);
-		this.setIconImage(new ImageIcon(getClass().getResource("/recursos/Avion.png")).getImage());
+		this.setIconImage(new ImageIcon(getClass().getResource("/resources/Avion.png")).getImage());
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

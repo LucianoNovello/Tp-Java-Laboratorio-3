@@ -1,4 +1,4 @@
-package clases;
+package obclass;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -62,9 +62,9 @@ public class listadoAviones<A extends Avion> implements Serializable
 	}
 	
 	/*
-	 * retornaElTamañoDelListado
+	 * retornaElTamaï¿½oDelListado
 	 */
-	public int getTamañoLista()
+	public int getTamaï¿½oLista()
 	{
 		return listadoAviones.size();
 	}
@@ -75,7 +75,7 @@ public class listadoAviones<A extends Avion> implements Serializable
 	
 	public boolean estaVacia()
 	{
-		if (getTamañoLista() == 0)
+		if (getTamaï¿½oLista() == 0)
 		{
 			return true;
 		}
